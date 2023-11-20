@@ -1,7 +1,6 @@
 // CurrenciesTable.tsx
 import React from "react";
 import { useCurrencies } from "../../../hooks/useGetCurrencies/useGetCurrencies";
-import ProtectedRoute from "../ProtectedRoute/ProtectedRoute";
 
 const CurrenciesTable: React.FC = () => {
   const { data, isLoading, error } = useCurrencies();
@@ -31,9 +30,5 @@ const CurrenciesTable: React.FC = () => {
 };
 
 export function Component(): JSX.Element {
-  return (
-    <ProtectedRoute>
-      <CurrenciesTable />
-    </ProtectedRoute>
-  );
+  return <CurrenciesTable />;
 }
