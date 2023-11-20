@@ -19,3 +19,7 @@ cd [project name]
 ni
 npm run [env]
 ```
+
+### UI Components
+
+This project uses https://ui.shadcn.com/
