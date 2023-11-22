@@ -2,6 +2,7 @@
 
 import { ReactNode } from "react";
 import LoginForm from "../../components/containers/LoginForm/LoginForm";
+import { Link } from "react-router-dom";
 
 function CenterMiddleScreen({
   childTitle,
@@ -18,7 +19,14 @@ function CenterMiddleScreen({
             <h1 className="text-3xl font-bold mb-8 text-center">
               {childTitle}
             </h1>
-            {childComponent}
+            <section>{childComponent}</section>
+
+            <Link
+              to="../common-hooks"
+              className="mx-auto w-full block text-center p-2 m-2 rounded bg-blue-300 text-white"
+            >
+              Go to Common hooks
+            </Link>
           </div>
         </div>
       </div>
