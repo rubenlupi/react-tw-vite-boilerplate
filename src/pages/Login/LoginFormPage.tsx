@@ -23,7 +23,7 @@ function CenterMiddleScreen({
 
             <Link
               to="../common-hooks"
-              className="mx-auto w-full block text-center p-2 m-2 rounded bg-blue-300 text-white"
+              className="mx-auto w-full block text-center p-2 m-2 rounded bg-blue-500 text-black"
             >
               Go to Common hooks
             </Link>
