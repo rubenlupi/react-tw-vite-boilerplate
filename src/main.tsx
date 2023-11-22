@@ -11,10 +11,12 @@ const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <AuthProvider>
-      <QueryClientProvider client={queryClient}>
-        <RouterProvider router={browserRoutes} />
-      </QueryClientProvider>
-    </AuthProvider>
+    <React.Suspense fallback={<div>Loading...</div>}>
+      <AuthProvider>
+        <QueryClientProvider client={queryClient}>
+          <RouterProvider router={browserRoutes} />
+        </QueryClientProvider>
+      </AuthProvider>
+    </React.Suspense>
   </React.StrictMode>
 );
