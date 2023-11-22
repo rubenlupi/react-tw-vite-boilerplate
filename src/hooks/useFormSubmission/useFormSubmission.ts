@@ -1,8 +1,8 @@
 import { UseFormReset, UseFormSetError } from "react-hook-form";
-import { TSignUpSchema } from "../../lib/types";
+import { TSignUpSchema } from "@/lib/types";
 import { useContext } from "react";
-import { AuthContext } from "../../providers/AuthProvider";
-import { postFetch } from "../../services/post-fetch";
+import { AuthContext } from "@/providers/AuthProvider";
+import { postFetch } from "@/services/post-fetch";
 import { useNavigate } from "react-router-dom";
 
 export function useFormSubmission(

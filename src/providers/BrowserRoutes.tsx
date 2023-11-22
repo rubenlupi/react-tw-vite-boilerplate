@@ -1,6 +1,6 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
-import { ErrorPage } from "../pages/GenericError/GenericErrorPage";
-import { OutletRoot } from "../pages/OutletRoot/OutletRoot";
+import { ErrorPage } from "@/pages/GenericError/GenericErrorPage";
+import { OutletRoot } from "@/pages/OutletRoot/OutletRoot";
 
 export const browserRoutes = createBrowserRouter([
   {
@@ -16,12 +16,29 @@ export const browserRoutes = createBrowserRouter([
         path: "/currencies",
         errorElement: <ErrorPage />,
         lazy: () =>
-          import("../components/containers/CurrenciesTable/CurrenciesTable"),
+          import("@/components/containers/CurrenciesTable/CurrenciesTable"),
       },
       {
         path: "/home",
         errorElement: <ErrorPage />,
-        lazy: () => import("../pages/Home/HomePage"),
+        lazy: () => import("@/pages/Home/HomePage"),
+      },
+      {
+        path: "/common-hooks",
+        errorElement: <ErrorPage />,
+        element: <OutletRoot />,
+        children: [
+          {
+            path: "/common-hooks",
+            errorElement: <ErrorPage />,
+            lazy: () => import("@/pages/CommonHooks/CommonHooksPage"),
+          },
+          {
+            path: "/common-hooks/use-state-in-url",
+            errorElement: <ErrorPage />,
+            lazy: () => import("@/pages/useStateInUrl/useStateInUrlPage"),
+          },
+        ],
       },
       {
         path: "/",
