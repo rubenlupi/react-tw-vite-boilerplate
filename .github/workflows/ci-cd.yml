@@ -7,7 +7,7 @@ on:
       - master
 
 jobs:
-  test:
+  ci-cd:
     runs-on: ubuntu-latest
 
     permissions:
@@ -37,7 +37,9 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
-      - name: install lighthouseci
-        run: npm install -g @lhci/cli@0.12.x
-      - name: execute lighthouse
-        run: lhci autorun
+      - name: npm install, build
+          run: npm run build
+        - name: run Lighthouse CI
+          run: |
+            npm install -g @lhci/cli@0.12.x
+            lhci autorun
