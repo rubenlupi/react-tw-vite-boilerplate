@@ -26,6 +26,9 @@ jobs:
         run: npx vitest --coverage
   conventional-changelog:
     runs-on: ubuntu-latest
+    permissions:
+      # Required to checkout the code
+      contents: write
     steps:
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
@@ -42,6 +45,9 @@ jobs:
           body: ${{ steps.changelog.outputs.clean_changelog }}
   lighthouseci:
     runs-on: ubuntu-latest
+    permissions:
+      # Required to checkout the code
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
