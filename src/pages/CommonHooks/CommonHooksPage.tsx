@@ -1,24 +1,20 @@
 import { MainPageLayout } from "@/components/MainPageLayout/MainPageLayout";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/Card/card";
+
 import { Link } from "react-router-dom";
 
 export function CardUseStateInUrl() {
   return (
-    <Card className="w-[350px] bg-gray-200">
-      <CardHeader>
-        <CardTitle className="uppercase text-center text-md">
-          Use State in Url
-        </CardTitle>
-        <CardDescription>
-          And example about how to use the state in url.
-        </CardDescription>
-      </CardHeader>
-    </Card>
+    // <Card className="w-[350px] bg-gray-200">
+    //   <CardHeader>
+    //     <CardTitle className="uppercase text-center text-md">
+    //       Use State in Url
+    //     </CardTitle>
+    //     <CardDescription>
+    //       And example about how to use the state in url.
+    //     </CardDescription>
+    //   </CardHeader>
+    // </Card>
+    <div className="w-[350px] bg-gray-200">Use State in Url</div>
   );
 }
 
