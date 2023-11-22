@@ -26,7 +26,7 @@ const CommonHooksPage = () => {
   return (
     <MainPageLayout>
       <div className="flex flex-wrap gap-2 m-2 justify-center items-center">
-        {[...Array(150).keys()].map((item, index) => (
+        {[...Array(150).keys()].map((_item, index) => (
           <Link key={index} to="/common-hooks/use-state-in-url">
             <CardUseStateInUrl />
           </Link>
