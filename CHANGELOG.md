@@ -1,3 +1,12 @@
+## [0.0.9](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.8...v0.0.9) (2023-11-22)
+
+
+### Bug Fixes
+
+* pipeline ([854af1b](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/854af1b65d33969f8ef8a826cd4adc31d955cb5a))
+
+
+
 ## [0.0.8](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.7...v0.0.8) (2023-11-22)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * pipeline ([c2eb488](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/c2eb4885f5e750abbc92273daa57b398895875ca))
-
-
-
-## [0.0.4](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.3...v0.0.4) (2023-11-22)
-
-
-### Bug Fixes
-
-* pipeline ligthhouse ([9d60771](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/9d6077110cce4b023e87eff95bfdaf15b32d79d1))
 
 
 
