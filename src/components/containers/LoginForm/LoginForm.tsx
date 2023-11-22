@@ -1,10 +1,10 @@
 // Asegúrate de ajustar la ruta de importación
 
-import { useFormHandling } from "../../../hooks/useForm/useForm";
-import { useFormSubmission } from "../../../hooks/useFormSubmission/useFormSubmission";
-import { Button } from "../../ui/Button/Button";
-import { ButtonClass } from "../../ui/Button/Button.style";
-import { Input } from "../../ui/Input/Input";
+import { useFormHandling } from "@/hooks/useForm/useForm";
+import { useFormSubmission } from "@/hooks/useFormSubmission/useFormSubmission";
+import { Button } from "@/components/ui/Button/Button";
+import { ButtonClass } from "@/components/ui/Button/Button.style";
+import { Input } from "@/components/ui/Input/Input";
 
 export default function FormWithReactHookFormAndZodAndServer() {
   const { register, handleSubmit, errors, isSubmitting, setError, reset } =
