@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.3...v0.0.4) (2023-11-22)
+
+
+### Bug Fixes
+
+* pipeline ligthhouse ([9d60771](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/9d6077110cce4b023e87eff95bfdaf15b32d79d1))
+
+
+
 ## [0.0.3](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.2...v0.0.3) (2023-11-22)
 
 
