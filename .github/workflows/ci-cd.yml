@@ -38,7 +38,7 @@ jobs:
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
       - name: npm install, build
-        run: npm run build
+        run: npm run build:prod
       - name: run Lighthouse CI
         run: |
           npm install -g @lhci/cli@0.12.x
