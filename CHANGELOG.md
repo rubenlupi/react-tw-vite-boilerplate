@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.5...v0.0.6) (2023-11-22)
+
+
+### Bug Fixes
+
+* pipelines ([9ec4453](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/9ec4453c1fe47611d6e948830b4e36e1706f0807))
+
+
+
 ## [0.0.5](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.4...v0.0.5) (2023-11-22)
 
 
@@ -33,15 +42,6 @@
 
 * add lighthouse pipeline ([00c782d](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/00c782d73dd9ac2d8ff0befe3ca928a97c89d571))
 * lighthouse pipelines ([06374a0](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/06374a0f14412db5abe3979322095beac6fb1b7a))
-
-
-
-## [0.0.1](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/2466ea5d1ca0f2fb7a2bc74c75a444e993759270...v0.0.1) (2023-11-20)
-
-
-### Bug Fixes
-
-* add @vitest/coverage-v8 as a dependency ([2466ea5](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/2466ea5d1ca0f2fb7a2bc74c75a444e993759270))
 
 
 
