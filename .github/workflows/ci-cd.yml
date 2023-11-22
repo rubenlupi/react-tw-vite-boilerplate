@@ -19,11 +19,14 @@ jobs:
       - name: "Install Node"
         uses: actions/setup-node@v2
         with:
-          node-version: "16.x"
+          node-version: 16
       - name: "Install Deps"
         run: npm install
       - name: "Test"
         run: npx vitest --coverage
+  conventional-changelog:
+    runs-on: ubuntu-latest
+    steps:
       - name: Conventional Changelog Action
         uses: TriPSs/conventional-changelog-action@v3
         with:
@@ -37,3 +40,13 @@ jobs:
           tag_name: ${{ steps.changelog.outputs.tag }}
           release_name: ${{ steps.changelog.outputs.tag }}
           body: ${{ steps.changelog.outputs.clean_changelog }}
+  lighthouseci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm install && npm install -g @lhci/cli@0.12.x
+      - run: npm run build
+      - run: lhci autorun
