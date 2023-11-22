@@ -23,12 +23,10 @@
     /* components https://ui.shadcn.com/ */
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ]
+      "@/*": ["src/*"]
     }
   },
 
-    "include": ["src", "./setup.tests.ts"],
+  "include": ["src", "./setup.tests.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
