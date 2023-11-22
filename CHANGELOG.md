@@ -1,3 +1,12 @@
+## [0.0.5](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.4...v0.0.5) (2023-11-22)
+
+
+### Bug Fixes
+
+* pipeline ([c2eb488](https://github.com/rubenlupi/react-tw-vite-boilerplate/commit/c2eb4885f5e750abbc92273daa57b398895875ca))
+
+
+
 ## [0.0.4](https://github.com/rubenlupi/react-tw-vite-boilerplate/compare/v0.0.3...v0.0.4) (2023-11-22)
 
 
